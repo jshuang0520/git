@@ -8,42 +8,42 @@ https://medium.com/@weilihmen/git-%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98-from-alph
 
 
 
-# clone repositary
+#### clone repositary
 git clone https://github.com/jshuang0520/git.git
 
-# change direction to the folder
+#### change direction to the folder
 cd git
 
-# to make a new branch
+#### to make a new branch
 git branch practice_branch
 
-# switch to that branch
+#### switch to that branch
 git checkout practice_branch
 
-# check all the branches, and to ensure you switched to the branch
+#### check all the branches, and to ensure you switched to the branch
 git branch -al
 
-# check unsaved changes (not yet pushed to git)
+#### check unsaved changes (not yet pushed to git)
 git status
 
-# add the file you want to commit and push to git repository
+#### add the file you want to commit and push to git repository
 git add git_manipulation.ipynb
 
-# commit
+#### commit
 git commit
 
-# push to the branch
+#### push to the branch
 git push -u practice_branch
 
 
-# What is the best (and safest) way to merge a Git branch into master?
+#### What is the best (and safest) way to merge a Git branch into master?
 git checkout master
 git pull origin master
 git merge test
 git push origin master
 
 
------------------------
+--
 
 
 cp ./pyenv_git.txt ../git
