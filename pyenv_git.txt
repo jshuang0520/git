@@ -147,3 +147,10 @@ git commit
 
 # push to the branch
 git push -u practice_branch
+
+
+# What is the best (and safest) way to merge a Git branch into master?
+git checkout master
+git pull origin master
+git merge test
+git push origin master
