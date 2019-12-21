@@ -2,10 +2,15 @@
 
 ---
 
-- [Notes](http://nbviewer.jupyter.org/github/jshuang0520/git/blob/master/git_manipulation.ipynb)
+## Notes
+- [Git Manipulation](http://nbviewer.jupyter.org/github/jshuang0520/git/blob/master/git_manipulation.ipynb)
+
+---
+
+## Steps:
 
 #### clone repositary
-> git clone https://github.com/jshuang0520/git.git
+> git clone [the repository url]
 
 #### change direction to the folder
 > cd git
