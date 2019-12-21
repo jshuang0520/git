@@ -1,5 +1,8 @@
 # git
 
+## workflow
+![img1](https://miro.medium.com/proxy/0*psCSE-BxW3zn4Ya1.png)
+
 ---
 
 ## Notes
