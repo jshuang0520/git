@@ -9,46 +9,46 @@ https://medium.com/@weilihmen/git-%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98-from-alph
 
 
 #### clone repositary
-git clone https://github.com/jshuang0520/git.git
+> git clone https://github.com/jshuang0520/git.git
 
 #### change direction to the folder
-cd git
+> cd git
 
 #### to make a new branch
-git branch practice_branch
+> git branch practice_branch
 
 #### switch to that branch
-git checkout practice_branch
+> git checkout practice_branch
 
 #### check all the branches, and to ensure you switched to the branch
-git branch -al
+> git branch -al
 
 #### check unsaved changes (not yet pushed to git)
-git status
+> git status
 
 #### add the file you want to commit and push to git repository
-git add git_manipulation.ipynb
+> git add git_manipulation.ipynb
 
 #### commit
-git commit
+> git commit
 
 #### push to the branch
-git push -u practice_branch
+> git push -u practice_branch
 
 
 #### What is the best (and safest) way to merge a Git branch into master?
-git checkout master
-git pull origin master
-git merge test
-git push origin master
+> git checkout master
+> git pull origin master
+> git merge test
+> git push origin master
 
 
 --
 
 
-cp ./pyenv_git.txt ../git
-git add .
-git commit -m "new version"
-git push origin -u practice_branch
+> cp ./pyenv_git.txt ../git
+> git add .
+> git commit -m "new version"
+> git push origin -u practice_branch
 
 
