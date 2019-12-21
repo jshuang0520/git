@@ -6,7 +6,9 @@ https://oawan.me/2016/all-about-git-command/
 
 https://medium.com/@weilihmen/git-%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98-from-alpha-camp-5c9ef85cf825
 
+---
 
+- [Notes](http://nbviewer.jupyter.org/github/jshuang0520/git/blob/master/git_manipulation.ipynb)
 
 #### clone repositary
 > git clone https://github.com/jshuang0520/git.git
