@@ -1,0 +1,149 @@
+# < pyenv >
+
+# https://learningsky.io/python-development-on-macos-with-pyenv-virtualenv/
+# https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/700508/
+
+# https://aji.tw/pyenv-python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E7%B5%95%E4%BD%B3%E5%88%A9%E5%99%A8/
+# pyenv 從安裝到使用基本上可以說是非常無腦
+# 好用到幾乎沒有學習曲線
+# 而我最常用到的指令不過有就以下三個
+pyenv install 
+pyenv virtualenv 
+pyenv local
+
+# 設定環境變數
+PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+#如果您是使用 bash 請把以上三行貼到 ~/.bashrc
+#若是使用 zsh 則是貼到 ~/.zshrc
+
+#注意： 若是在 OS X 下使用 bash，記得是要貼到 ~/.bash_profile 而不是 ~/.bashrc 喔！
+#接者， 重新啟動shell
+exec $SHELL
+
+
+
+
+
+
+
+
+
+# pyenv 設定連動
+pyenv virtualenv 3.6.8 scooter-dispense-env
+
+pyenv versions
+
+
+===
+
+# < git >
+# git workflow
+# https://medium.com/@weilihmen/git-%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98-from-alpha-camp-5c9ef85cf825
+
+# 參考網站： https://oawan.me/2016/all-about-git-command/
+
+# git clone: 複製專案資料夾下來
+git clone git@10.0.1.31:ML/scooter-dispense.git
+
+pyenv versions
+pyenv local scooter-dispense-env
+
+
+# 開branch
+git branch multithread
+
+# 切換分支 ( checkout )
+git checkout
+ex. git checkout multithread
+
+# 列出所有branch，也確定自己現在在哪個branch
+git branch -al
+
+# 顯示修改檔案清單 ( status )
+git stautus
+
+
+cd scooter-dispense_backup
+ls
+# copy files (from folder1 to folder2)
+cp ../scooter-dispense_backup/2019.12.19/exec_split_file_20191219v1.py .
+cp ../scooter-dispense_backup/2019.12.19/*_20191219v1.py .
+# rename files
+mv exec_split_file_20191219v1.py exec_split_file.py
+mv merge_logger_20191219v1.py merge_logger.py
+
+# 因為剛剛copy過來的檔案改名了，所以修改一下.sh裡面的內容（執行的程式名稱改成新的名稱而已啦）
+vim script.sh
+
+
+
+# 將檔案加入索引 ( add )
+git add <file>... 
+ex. git add exec_split_file.py
+#git add .  可以將當前目錄下的所有修改檔案加入索引
+
+#---
+# 還原已修改檔案 ( checkout – )
+git checkout -- <file>
+#---
+
+
+# 提交檔案 ( commit )
+git commit
+# -m <message>：訊息提交
+# --amend <message>：修改上一次 commit 內容
+
+# 上傳(或更新)本地端分支
+git push
+ex. git push origin -u multithread
+
+
+git branch -al
+git status
+
+cp ../scooter-dispense-copy/requirements.txt .
+vim requirements.txt
+
+# 查看修改前後的差異
+git diff requirements.txt
+git checkout requirements.txt
+
+#---
+# 合併(或更新)遠端至本地端分支
+git pull
+
+# 顯示提交紀錄 ( log )
+git log
+#---
+
+
+==================================
+
+# clone repositary
+git clone https://github.com/jshuang0520/git.git
+
+# change direction to the folder
+cd git
+
+# to make a new branch
+git branch practice_branch
+
+# switch to that branch
+git checkout practice_branch
+
+# check all the branches, and to ensure you switched to the branch
+git branch -al
+
+# check unsaved changes (not yet pushed to git)
+git status
+
+# add the file you want to commit and push to git repository
+git add git_manipulation.ipynb
+
+# commit
+git commit
+
+# push to the branch
+git push -u practice_branch
