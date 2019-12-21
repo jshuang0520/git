@@ -38,17 +38,25 @@ https://medium.com/@weilihmen/git-%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98-from-alph
 
 #### What is the best (and safest) way to merge a Git branch into master?
 > git checkout master
+
 > git pull origin master
+
 > git merge test
+
 > git push origin master
+
 
 
 --
 
 
 > cp ./pyenv_git.txt ../git
+
 > git add .
+
 > git commit -m "new version"
+
 > git push origin -u practice_branch
+
 
 
