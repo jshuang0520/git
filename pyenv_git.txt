@@ -141,18 +141,19 @@ git status
 
 # add the file you want to commit and push to git repository
 git add git_manipulation.ipynb
+(Git add . #means add all files in this folder)
 
-# commit
-git commit
+# commit with message
+git commit -m "message"
 
 # push to the branch
-git push -u practice_branch
+git push origin -u practice_branch
 
 
 # What is the best (and safest) way to merge a Git branch into master?
 git checkout master
 git pull origin master
-git merge test
+git merge practice_branch
 git push origin master
 
 
