@@ -32,9 +32,10 @@
 
 #### add the file you want to commit and push to git repository
 > git add git_manipulation.ipynb
+(Git add . #means add all files in this folder)
 
 #### commit with message
-> git commit -m "message"
+git commit -m "message"
 
 #### push to the branch
 > git push origin -u practice_branch
@@ -45,7 +46,7 @@
 
 > git pull origin master
 
-> git merge test
+> git merge practice_branch
 
 > git push origin master
 
