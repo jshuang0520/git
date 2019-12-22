@@ -33,8 +33,8 @@
 #### add the file you want to commit and push to git repository
 > git add git_manipulation.ipynb
 
-#### commit
-> git commit
+#### commit with message
+> git commit -m "message"
 
 #### push to the branch
 > git push -u practice_branch
