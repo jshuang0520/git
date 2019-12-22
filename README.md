@@ -37,7 +37,7 @@
 > git commit -m "message"
 
 #### push to the branch
-> git push -u practice_branch
+> git push origin -u practice_branch
 
 
 #### What is the best (and safest) way to merge a Git branch into master?
