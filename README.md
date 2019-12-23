@@ -35,7 +35,7 @@
 (Git add . #means add all files in this folder)
 
 #### commit with message
-git commit -m "message"
+> git commit -m "message"
 
 #### push to the branch
 > git push origin -u practice_branch
