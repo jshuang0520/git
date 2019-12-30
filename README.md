@@ -10,6 +10,13 @@
 
 ---
 
+### switch role
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+---
+
 ## Steps:
 
 #### clone repositary
@@ -39,6 +46,7 @@
 
 #### push to the branch
 > git push origin -u practice_branch
+(-u only for the first time)
 
 
 #### What is the best (and safest) way to merge a Git branch into master?
