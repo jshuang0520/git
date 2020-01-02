@@ -43,38 +43,8 @@
 
 (Git add . #means add all files in this folder)
 
---
-
-#### (optional) undo 'git add' before commit
-
-> git reset < file_name >
-
-(git reset (this will reset all files added))
-
-https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit
-
---
-
 #### commit with message
 > git commit -m "message"
-
---
-
-#### (optional) reset previous commit
-
-![img1](https://www.git-tower.com/learn/media/pages/git/faq/undo-last-commit/-885409906-1575572522/02-reset-concept.png)
-
-To check every commit_id
-
-> git log --oneline
-
-> git reset ca4a800^  --> means back to previous 1 commit(s) of this commit_id
-
-(git reset ca4a800~5) --> means back to previous 5 commit(s) of this commit_id
-
-https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
-
---
 
 #### push to the branch
 > git push origin -u practice_branch
@@ -107,6 +77,33 @@ https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-c
 
 > git push origin -u practice_branch
 
+
+
+--
+
+#### (optional) undo 'git add' before commit
+
+> git reset < file_name >
+
+(git reset (this will reset all files added))
+
+https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit
+
+--
+
+#### (optional) reset previous commit
+
+![img1](https://www.git-tower.com/learn/media/pages/git/faq/undo-last-commit/-885409906-1575572522/02-reset-concept.png)
+
+To check every commit_id
+
+> git log --oneline
+
+> git reset ca4a800^  --> means back to previous 1 commit(s) of this commit_id
+
+(git reset ca4a800~5) --> means back to previous 5 commit(s) of this commit_id
+
+https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
 
 
 ---
