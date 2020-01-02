@@ -47,7 +47,7 @@
 
 #### (optional) undo 'git add' before commit
 
-> git reset <file>
+> git reset < file_name >
 
 (git reset (this will reset all files added))
 
