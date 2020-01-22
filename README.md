@@ -143,3 +143,21 @@ https://oawan.me/2016/all-about-git-command/
 https://medium.com/@weilihmen/git-%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98-from-alpha-camp-5c9ef85cf825
 
 https://gitbook.tw/chapters/using-git/reset-commit.html
+
+
+---
+
+### check current username & email in your local repo
+> git config --list
+
+### [How to switch git user at terminal?](https://superuser.com/questions/1064197/how-to-switch-git-user-at-terminal)
+
+#### Change username and email global
+> git config --global user.name "Bob"
+
+> git config --global user.email "bob@example.com"
+
+#### Change username and email for current repo
+> git config  user.name "Bob"
+
+> git config  user.email "bob@example.com"
