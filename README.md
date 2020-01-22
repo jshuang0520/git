@@ -44,6 +44,7 @@
 (Git add . #means add all files in this folder)
 
 [Difference between “git add -A” and “git add .”](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add)
+
 Summary:
 
 - git add -A  : stages all changes
@@ -115,6 +116,22 @@ To check every commit_id
 
 https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
 
+---
+
+### (often) when collaborating with others (confronting any changes on git - different from your local side)
+
+> git fetch <repo_name> <branch_name>  ->  git fetch origin practice_branch
+
+> git merge <branch_name>  ->  git merge practice_branch
+
+### In its default mode, git pull is shorthand for git fetch followed by git merge FETCH_HEAD.
+
+### git : pull = fetch + merge FETCH_HEAD
+
+![img2](https://i.stack.imgur.com/zUInQ.png)
+[What is the difference between 'git pull' and 'git fetch'?](https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)
+
+### But this : [GIT: FETCH AND MERGE, DON’T PULL](https://longair.net/blog/2009/04/16/git-fetch-and-merge/)
 
 ---
 
