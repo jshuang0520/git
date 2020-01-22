@@ -148,6 +148,11 @@ https://gitbook.tw/chapters/using-git/reset-commit.html
 ---
 
 ### check current username & email in your local repo
+> git config user.name
+
+> git config user.email
+
+or 
 > git config --list
 
 ### [How to switch git user at terminal?](https://superuser.com/questions/1064197/how-to-switch-git-user-at-terminal)
