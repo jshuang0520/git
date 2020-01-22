@@ -38,10 +38,20 @@
 #### check unsaved changes (not yet pushed to git)
 > git status
 
-#### add the file you want to commit and push to git repository
+#### the file you want to commit and push to git repository
 > git add git_manipulation.ipynb
 
 (Git add . #means add all files in this folder)
+
+[Difference between “git add -A” and “git add .”](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add)
+Summary:
+
+- git add -A  : stages all changes
+
+- git add .   : stages new files and modifications, without deletions
+
+- git add -u  : stages modifications and deletions, without new files
+
 
 #### commit with message
 > git commit -m "message"
