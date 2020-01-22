@@ -41,7 +41,7 @@
 #### the file you want to commit and push to git repository
 > git add git_manipulation.ipynb
 
-(Git add . #means add all files in this folder)
+(git add .  --> means add all files in this folder)
 
 [Difference between “git add -A” and “git add .”](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add)
 
@@ -119,10 +119,9 @@ https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-c
 ---
 
 ### (often) when collaborating with others (confronting any changes on git - different from your local side)
+> git fetch origin practice_branch  ->  git fetch <repo_name> <branch_name>
 
-> git fetch <repo_name> <branch_name>  ->  git fetch origin practice_branch
-
-> git merge <branch_name>  ->  git merge practice_branch
+> git merge practice_branch ->  git merge <branch_name>
 
 ### In its default mode, git pull is shorthand for git fetch followed by git merge FETCH_HEAD.
 
