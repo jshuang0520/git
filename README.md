@@ -110,18 +110,18 @@ To check every commit_id
 
 > git log --oneline
 
-> git reset ca4a800^  --> means back to previous 1 commit(s) of this commit_id
+> git reset ca4a800^  // --> means back to previous 1 commit(s) of this commit_id
 
-(git reset ca4a800~5) --> means back to previous 5 commit(s) of this commit_id
+(git reset ca4a800~5) // --> means back to previous 5 commit(s) of this commit_id
 
 https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
 
 ---
 
 ### (often) when collaborating with others (confronting any changes on git - different from your local side)
-> git fetch origin practice_branch  ->  git fetch <repo_name> <branch_name>
+> git fetch origin practice_branch  // pattern ->  git fetch <repo_name> <branch_name>
 
-> git merge practice_branch ->  git merge <branch_name>
+> git merge practice_branch // pattern ->  git merge <branch_name>
 
 ### In its default mode, git pull is shorthand for git fetch followed by git merge FETCH_HEAD.
 
