@@ -166,3 +166,9 @@ or
 > git config  user.name "Bob"
 
 > git config  user.email "bob@example.com"
+
+### [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed)
+> git remote set-url origin git@github.com:zkirkland/Random-Python-Tests.git
+```
+If you enabled two-factor authentication in your Github account you won't be able to push via HTTPS using your accounts password. Instead you need to generate a personal access token.
+```
