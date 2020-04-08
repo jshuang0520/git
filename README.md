@@ -169,7 +169,14 @@ or
 
 -
 ### [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed)
-> git remote set-url origin git@github.com:zkirkland/Random-Python-Tests.git
+> 
+```
+git remote set-url origin git@github.com:zkirkland/Random-Python-Tests.git
+
+git remote set-url origin git://github.com/samrao2/manager-4.git
+```
+
+
 ```
 If you enabled two-factor authentication in your Github account 
 you won't be able to push via HTTPS using your accounts password. 
