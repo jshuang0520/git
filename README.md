@@ -170,17 +170,20 @@ or
 --
 
 ### [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed)
-> 
+> two-factor authentication enabled would encounter this issue
+
 ```
+If you enabled two-factor authentication in your Github account you won't be able to push via HTTPS using your accounts password. Instead you need to generate a personal access token.
+
+
 Or you encountered the following:
 remote: Permission to ooo/xxx.git denied to <user.email>.
 fatal: unable to access 'https://github.com/ooo/xxx.git/': The requested URL returned error: 403
 
 do this:
-
+$ git remote set-url origin < something cloned with SSH >
 $ git remote set-url origin git@github.com:zkirkland/Random-Python-Tests.git
-or
-$ git remote set-url origin git://github.com/samrao2/manager-4.git
+
 ```
 
 
