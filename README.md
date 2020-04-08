@@ -167,13 +167,20 @@ or
 
 > git config  user.email "bob@example.com"
 
--
+--
+
 ### [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed)
 > 
 ```
-git remote set-url origin git@github.com:zkirkland/Random-Python-Tests.git
+Or you encountered the following:
+remote: Permission to ooo/xxx.git denied to <user.email>.
+fatal: unable to access 'https://github.com/ooo/xxx.git/': The requested URL returned error: 403
 
-git remote set-url origin git://github.com/samrao2/manager-4.git
+do this:
+
+$ git remote set-url origin git@github.com:zkirkland/Random-Python-Tests.git
+or
+$ git remote set-url origin git://github.com/samrao2/manager-4.git
 ```
 
 
