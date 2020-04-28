@@ -95,6 +95,7 @@ or just cd to your current original-branch, then: git checkout -b <derived-branc
 #### Visualize git branches
 (Visualizing branch topology in Git)[https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/11594406]
 
+
 #### git flow
 [git flow](https://github.com/nvie/gitflow)
 
