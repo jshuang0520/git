@@ -55,6 +55,27 @@ git commit -m "message"
 --
 
 
+#### co-work with others: 
+[create make a new branch from another branch](https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch)
+
+pattern: git checkout -b <derived-branch> <original-branch>
+git checkout -b plot/hotspot poc/neo4j
+
+or just cd to your current original-branch, then: git checkout -b <derived-branch> 
+> git checkout -b plot/hotspot
+
+![img-create-branch-from another-branch](https://i.stack.imgur.com/6qEWk.jpg)
+
+
+#### Visualize git branches
+(Visualizing branch topology in Git)[https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/11594406]
+
+#### git flow
+[git flow](https://github.com/nvie/gitflow)
+
+--
+
+
 > cp ./pyenv_git.txt ../git
 
 > git add .
