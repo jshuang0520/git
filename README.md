@@ -100,7 +100,7 @@ or just cd to your current original-branch, then: git checkout -b < derived-bran
 > $ git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 ![img-visualize-git-flow-branches](https://i.stack.imgur.com/jbxOX.png)
 
-[Visualizing branch topology in Git][https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/11594406]
+[Visualizing branch topology in Git](https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/11594406)
 
 
 #### git flow
