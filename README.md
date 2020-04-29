@@ -81,6 +81,8 @@ Summary:
 
 
 #### co-work with others: 
+[A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+
 [create make a new branch from another branch](https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch)
 
 pattern: git checkout -b < derived-branch > < original-branch >
