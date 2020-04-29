@@ -83,6 +83,10 @@ Summary:
 #### co-work with others: 
 [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
 
+[How can I visualize Git Flow branches?](https://superuser.com/questions/699094/how-can-i-visualize-git-flow-branches)
+> $ git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+![img-visualize-git-flow-branches](https://i.stack.imgur.com/jbxOX.png)
+
 [create make a new branch from another branch](https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch)
 
 pattern: git checkout -b < derived-branch > < original-branch >
