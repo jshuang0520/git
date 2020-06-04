@@ -161,6 +161,10 @@ https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-c
 
 ### But this : [GIT: FETCH AND MERGE, DON’T PULL](https://longair.net/blog/2009/04/16/git-fetch-and-merge/)
 
+
+### [Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+![img_merge_vs_rebase](https://wac-cdn.atlassian.com/dam/jcr:1d22f018-b2c7-4096-9db1-c54940cf4f4e/05.svg?cdnVersion=1054)
+
 ---
 
 Links
