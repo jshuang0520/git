@@ -177,6 +177,8 @@ https://medium.com/@weilihmen/git-%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AD%98-from-alph
 
 https://gitbook.tw/chapters/using-git/reset-commit.html
 
+[學習版本控制基礎 - Git & Gitlab](https://windsuzu.github.io/learn-git/)
+
 
 ---
 
