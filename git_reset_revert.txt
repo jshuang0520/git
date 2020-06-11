@@ -1,0 +1,74 @@
+git pull origin feature/dao_implementation -r
+
+git stash apply --index
+
+git log HEAD..origin/feature/dao_implementation
+git remote update
+git rebase origin/feature/dao_implementation
+git pull
+git stash
+git stash pop 
+
+git reset -- hard
+git stash apply
+git stash list
+
+git stash save 'stash 1'
+git stash pop stash@{0}
+git stash drop stash@{0}
+git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+
+
+
+
+===================================================================================================
+
+to revert with a chance to rescue the commit you want to discard
+
+===================================================================
+git revert :
+would leave a commit, so you can see the old files for that commit in 'History'
+===================================================================
+
+git revert <your_last_commit>
+!!!!!!!!!!! (would show a commit message, NEED TO WRITE THIS COMMIT!!! by doing ":wq") !!!!!!!!!!!
+git push origin dev
+===================================================================================================
+
+
+
+
+===================================================================================================
+
+!!!!!!!!!!!!!!!!!!!!!!
+!!!                !!!
+!!!                !!!
+!!! danderous zone !!!
+!!!                !!!
+!!!                !!!
+!!!!!!!!!!!!!!!!!!!!!!
+
+!!! the following will erase everthing for the commit you want to discard !!!
+(plan: so you can stash first to save your working status for now at least)
+===================================================================
+git reset --hard <your_last_commit> :
+would NOT leave a commit, so you erase everything for that commit
+https://stackoverflow.com/questions/3293531/how-to-permanently-remove-few-commits-from-remote-branch
+
+> example:
+git reset --hard <assigned_commit>          # Letting your pointer point to that commit
+git push --force
+===================================================================
+
+> my code:
+git reset --hard <assigned_commit>^         # Letting your pointer point to a prior commit of this given commit
+git push origin <your_branch_name> --force  # Now your local directory would be the same status as the "revert" status
+
+
+===================================================================================================
+
+
+
+
+

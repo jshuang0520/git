@@ -165,6 +165,38 @@ https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-c
 ### [Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 ![img_merge_vs_rebase](https://wac-cdn.atlassian.com/dam/jcr:1d22f018-b2c7-4096-9db1-c54940cf4f4e/05.svg?cdnVersion=1054)
 
+
+### [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands#comments)
+
+> $ git log --oneline
+
+![Fig. 1: Local Git environment with repository, staging area, and working directory](https://opensource.com/sites/default/files/uploads/gitcommands1_local-environment.png)
+Fig. 1: Local Git environment with repository, staging area, and working directory
+
+> reset: pointer_back, local_repositary, staging_area, working_directory, hard_soft_mixed
+``` 
+Let's start with the Git command reset. 
+Practically, you can think of it as a "rollback" — it points your local environment back to a previous commit. By "local environment," we mean your local repository, staging area, and working directory.
+```
+
+![Fig. 2: After reset](https://opensource.com/sites/default/files/uploads/gitcommands2_reset.png)
+Fig. 2: After reset
+
+> revert: new_commit
+```
+Where the reset command moves the branch pointer back in the chain (typically) to "undo" changes, 
+the revert command adds a new commit at the end of the chain to "cancel" changes
+```
+
+
+> Revert or reset?
+```
+If you have already pushed your chain of commits to the remote repository (where others may have pulled your code and started working with it), a revert is a nicer way to cancel out changes for them. 
+
+This is because the Git workflow works well for picking up additional commits at the end of a branch, but it can be challenging if a set of commits is no longer seen in the chain when someone resets the branch pointer back.
+```
+
+
 ---
 
 Links
