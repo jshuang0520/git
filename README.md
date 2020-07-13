@@ -201,15 +201,15 @@ This is because the Git workflow works well for picking up additional commits at
 
 for files
 
-> git rm --cached <file>
+> git rm --cached < file >
 
 use -f to force it
 
-> git rm -f --cached <file>
+> git rm -f --cached < file >
 
 for folders
 
-> git rm -r --cached <folder>
+> git rm -r --cached < folder >
 
 
 ## [Git merge master into feature branch](https://stackoverflow.com/questions/16955980/git-merge-master-into-feature-branch)
