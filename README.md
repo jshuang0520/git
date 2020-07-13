@@ -197,6 +197,41 @@ This is because the Git workflow works well for picking up additional commits at
 ```
 
 
+## [How to make Git “forget” about a file that was tracked but is now in .gitignore?
+](https://stackoverflow.com/questions/1274057/how-to-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore)
+
+> git rm --cached <file>
+
+> git rm -f --cached <file>
+
+
+
+## [Git merge master into feature branch](https://stackoverflow.com/questions/16955980/git-merge-master-into-feature-branch)
+
+### 1. merge origin/master branch to feature branch
+
+> git checkout master
+
+> git pull
+
+> git checkout feature
+
+> git pull
+
+> git merge master
+
+
+### 2. merge feature branch to origin/master branch
+
+> git checkout master
+
+> git pull origin/master
+
+> git merge feature
+
+> git push origin/master
+
+
 ---
 
 Links
