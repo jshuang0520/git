@@ -62,6 +62,25 @@ Summary:
 
 (-u only for the first time)
 
+--
+
+### other functions
+
+#### check for the remote
+```git remote -v```
+
+#### get the data you don't have
+```git fetch```
+
+
+### handling merging conflicts
+
+#### restore the repo to the initial state (DANGEROUS)
+```source $GIT_ROOT/projects/tutorial_git/restart.sh```
+which in practice corresponds to
+```rm -rf /tmp/[YOUR_REPO_NAME]```
+
+
 
 --
 
